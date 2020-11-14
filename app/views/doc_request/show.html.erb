@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @doc_request.user %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @doc_request.status %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @doc_request.code %>
+</p>
+
+<%= link_to 'Edit', edit_doc_request_path(@doc_request) %> |
+<%= link_to 'Back', doc_requests_path %>
