@@ -1,0 +1,7 @@
+<h1>New Doc Request</h1>
+
+<%= form_for @request, html: { multipart: true } do |f| %>
+  <%= f.submit "Solicitar", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to 'Back', doc_request_path %>

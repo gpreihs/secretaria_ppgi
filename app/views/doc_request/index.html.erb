@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Abrir solicitação de documentação </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doc_request.each do |request| %>
+      <tr>
+        <td><%= request.title %></td>
+        <td><%= request.content %></td>
+        <td><%= link_to 'Show', request %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'New doc request', new_doc_request_path %>
